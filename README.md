@@ -1,1 +1,1 @@
-# protection-severity
+# Compilation of protection severity index from multiple indicators
