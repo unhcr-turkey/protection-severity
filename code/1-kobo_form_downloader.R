@@ -14,7 +14,7 @@
 
 ############################################################
 #                                                          #
-#                         Packages                         ####
+#                         Packages load                    ####
 #                                                          #
 ############################################################
 
@@ -41,7 +41,7 @@ library(stringdist) ## used to fuzzy match column
 
 ############################################################
 #                                                          #
-#                 Uncomment the right one                  #
+#                 As users details                         ####
 #                                                          #
 ############################################################
 
@@ -91,9 +91,8 @@ write.csv(datadown,paste0("data/data_",formid,".csv"))
 ## save form in data folder using formid as the name
 URL1 <- sprintf(fmt = "%sforms/%s/form.xlsx", koboloadeR:::host(apiurl), formid)
 form_tmp <- file(paste0("data/form_",formid,".xlsx"), open = "wb")
-#form_tmp <- paste0("data/form_",formid,".xls")
 bin <- getBinaryURL(URL1, userpwd =usernamepassword , httpauth = 1L, ssl.verifypeer=FALSE  )
 writeBin(bin, form_tmp)
 close(form_tmp)
 
-rm(apiurl,bin,FORM,formid,URL1,usernamepassword,apichoose,user,passw)
+rm(apiurl,bin,FORM,formid,URL1,usernamepassword,apichoose,user,passw,formselect,form_tmp)

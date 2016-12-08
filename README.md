@@ -25,14 +25,17 @@ In the humanitarian sector another example of composite indicator is the [INFORM
 ## Composite Indicators preparation
 
 
-## Treat the data (missing value, outliers)
+### Treat the data (missing value, outliers) 
 
-## Explore the correlations
+ * Missing value: Not more than 25% missing data per indicator.  
+ * Outliers detection: identify and deal with extreme value. 
 
-## Standardize/normalize the data
+### Explore the correlations
 
-## Define the weight of each indicator
+### Standardize/normalize the data
 
-## Develop an aggregation method
+### Define the weight of each indicator
 
-## Assess robustness & sensitivity
+### Develop an aggregation method
+
+### Assess robustness & sensitivity
