@@ -40,7 +40,7 @@ packages <- c(
   "FactoMineR", ## Multiple Correspondance analysis
   "rattle",
   "stringr","stringdist",
-  "stringi","RCurl","RCpp","plyr","tidyR","readxl",
+  "stringi","RCurl","Rcpp","plyr","tidyR","readxl",
   "devtools", # package used to load packages hosted in github -- install CURL before and separately
   "xkcd" ## Style from the xkcd comics 
 )
