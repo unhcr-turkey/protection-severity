@@ -26,7 +26,7 @@ attributes(data)$variable.labels <- datalabel[ , 15]
 
 surveyindiccomm <- surveyindic
 datacomm <- data
-
+datalabelcomm <- datalabel
 ############################################################
 #                                                          #
 #                       Observation  data                  #
@@ -47,7 +47,7 @@ attributes(data)$variable.labels <- datalabel[ , 15]
 #names(data)
 surveyindicobs <- surveyindic
 dataobs <- data
-
+datalabelobs <- datalabel
 
 
 
