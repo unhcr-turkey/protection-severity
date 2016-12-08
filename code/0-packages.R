@@ -39,8 +39,8 @@ packages <- c(
   "scatterplot3d",  "psych",  "ellipse",   "pastecs",
   "FactoMineR", ## Multiple Correspondance analysis
   "rattle",
-  "stringr",
-  "stringi","koboloadeR",
+  "stringr","stringdist",
+  "stringi","RCurl","RCpp","plyr","tidyR","readxl",
   "devtools", # package used to load packages hosted in github -- install CURL before and separately
   "xkcd" ## Style from the xkcd comics 
 )
@@ -49,6 +49,12 @@ packages <- c(
 if (length(setdiff(packages, rownames(installed.packages()))) > 0) {
   install.packages(setdiff(packages, rownames(installed.packages())))  
 }
+
+
+## Installation of koboloadeR
+#source("http://news.mrdwab.com/install_github.R")
+#library(devtools)
+#install_github("mrdwab/koboloadeR")
 
 rm(packages)
 
