@@ -13,13 +13,39 @@ In the humanitarian sector another example of composite indicator is the [INFORM
 
 ### Loading data directly from KoboToolbox
 
+* Data & Form is loaded directly from Kobotoolbox API
+
+* Form definition allow to reencode the dataset
+
 ### Compiling indicator values from the questions
+
+Each questions is linked to:
+
+* Indicator name
+* Indicator group
+* Indicator Calculation: this field is used in order to automatise indicator calculations
+
+Indicator calculation is dependent on whether:
+* Questions results to be used directly as indicator value
+* Questions results to be used a sole numerator
+* Questions results to be used as one of the numerators to be sumed up
+* Questions results to be used a sole denominator
+* Questions results to be used as one of the denominators to be sumed up
 
 ## Exploring Data
 
 ### Creating graphs
 
+Based on question type, a series of graph can be automatically generated from each questions:
+
+* Boxplot
+* Bar plot to show distribution 
+* Histogramm
+* Line chart to display evolution over time
+
 ### Creating maps
+
+maps are used mostly to disply z-score in o
 
 
 ## Composite Indicators preparation
@@ -32,10 +58,35 @@ In the humanitarian sector another example of composite indicator is the [INFORM
 
 ### Explore the correlations
 
-### Standardize/normalize the data
+Here we need to check the correlation between indicators. The objective of the composite indicator is to capture the maximum of variance.
 
-### Define the weight of each indicator
+We are actually looking for intermediate correlations:
+ * Two highly correlated indicators actually describe the same effect or situation - meaning that one of the two indicators coudl actually be taken out of consideration
+ 
+ * Negatively correlated indicators should be avoided, unless it the direction of the indicator can be inverted.
+ 
+ * Poorly correlated indicators are likely not indicate the same phenomenon.
 
-### Develop an aggregation method
+### Standardize/normalize the data 
 
-### Assess robustness & sensitivity
+ * Adjust for measurement unit
+ * Adjust for variance
+ * Adjust for range
+ * Adjust for extreme values
+
+
+### Define the weight of each indicator 
+
+ * Weights based on statistical models
+ * Weights based on scores
+ * Weights based on participation or on ranks
+
+### Develop an aggregation method 
+
+Define indicators that can be added together and Indicators that should be multiplied (no compensability): for instance Access to education & Access to health care
+
+
+### Assess robustness & sensitivity 
+
+Ensure that the decision made for normalization, weighting and aggregation have limited effects on the final ranking
+
